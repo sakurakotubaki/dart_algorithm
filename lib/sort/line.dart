@@ -1,4 +1,5 @@
 // 線形探索
+// 目的の数字を見つける
 void linearSearch(List<int> list, int target) {
   for (var i = 0; i < list.length; i++) {
     if (list[i] == target) {
