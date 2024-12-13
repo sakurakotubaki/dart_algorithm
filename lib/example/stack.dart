@@ -64,38 +64,18 @@ void main() {
   final myStack = MyStack<String>();
 
   myStack.push('a');
-  print(myStack);
-  myStack.push('b');
-  print(myStack);
-  myStack.push('c');
-  print(myStack);
-
-  final val1 = myStack.pop();
-  print(val1);
-  final val2 = myStack.pop();
-  print(val2);
-  final val3 = myStack.pop();
-  print(val3);
-
-  print('$val1 $val2 $val3');
+  print(myStack); // [a]
+  myStack.pop();
+  print(myStack.isEmpty); // true
+  print(myStack.length); // 0
 
   // キューの使用例
   print('\n=== Queue Demo ===');
   final myQueue = MyQueue<String>();
 
   myQueue.enqueue('a');
-  print(myQueue);
-  myQueue.enqueue('b');
-  print(myQueue);
-  myQueue.enqueue('c');
-  print(myQueue);
-
-  final qVal1 = myQueue.dequeue();
-  print(qVal1);
-  final qVal2 = myQueue.dequeue();
-  print(qVal2);
-  final qVal3 = myQueue.dequeue();
-  print(qVal3);
-
-  print('$qVal1 $qVal2 $qVal3');
+  print(myQueue); // [0]
+  myQueue.dequeue();
+  print(myQueue.isEmpty); // true
+  print(myQueue.length); // 0
 }
