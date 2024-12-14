@@ -48,8 +48,9 @@ class Settings {
   /// シークレットキー
   late final String secretKey;
 }
+```
 
-/// ロギングのためのSingletonクラス
+## ロギングのためのSingletonクラス
 ```dart
 import 'dart:io';
 import 'package:intl/intl.dart';
